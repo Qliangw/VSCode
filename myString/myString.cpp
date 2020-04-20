@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
+#include "myString.h"
 
 using namespace std;
 
-int main()
+int myString()
 {
     string name;
     cin >> name;

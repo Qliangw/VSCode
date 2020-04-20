@@ -3,15 +3,16 @@
         {
             "name": "CMake",
             "includePath": [
-             "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}"
             ],
             "defines": [
-             "_DEBUG",
-             "UNICODE",
-             "_UNICODE"
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "C:/Tools/mingw64/bin/gcc.exe", 
+            "compilerPath": "C:/Tools/mingw64/bin/gcc.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "clang-x64",
