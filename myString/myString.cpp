@@ -16,7 +16,6 @@ int myString()
     string b = "++";
     auto c = a + b;
     cout << c << endl;
-
-    system("pause");
+    
     return 0;
 }
