@@ -1,2 +1,8 @@
 build
 .vscode
+main.cpp
+CMakeLists.txt
+vector/CMakeLists.txt
+array/CMakeLists.txt
+myString/CMakeLists.txt
+sort/CMakeLists.txt
