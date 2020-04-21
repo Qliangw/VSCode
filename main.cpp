@@ -1,18 +1,18 @@
-//#include <iostream>
-#include "myString.h"
-#include "array.h"
-#include "sort.h"
-#include "myVector.h"
-#include "myAlgorithm.h"
+#include <iostream>
+// #include "myString/myString.h"
+// #include "array/array.h"
+// #include "sort/sort.h"
+// #include "vector/myVector.h"
+// #include "algorithm/myAlgorithm.h"
+#include "set/mySet.h"
 
 int main(int argc, const char** argv) 
 {
-    // myString();
-    // arrayAndVector();
-    // alg_sort();
-    // test_binary();
-    // test_binary_vector();
-    test_memoized_Collatz();
+	set_example();
     system("pause");
     return 0;
 }
+
+///////////////////////////////////////////////////////////////////////////////////
+
+
