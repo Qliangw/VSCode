@@ -188,7 +188,6 @@ int main()
 	printL(head);
 	cout << endl;
 
-
     system("pause");
 	return 0;
 }
