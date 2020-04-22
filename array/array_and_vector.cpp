@@ -1,13 +1,11 @@
 #include <iostream>
 #include <vector>
-#include <Windows.h>
 #include "array.h"
 
 using namespace std;
 
 int arrayAndVector()
 {
-    SetConsoleOutputCP(65001);
     const int n = 42;
     const int c = 1;
 
