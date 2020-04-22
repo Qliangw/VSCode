@@ -1,2 +1,4 @@
 # VSCode
-ç”¨äºŽVSCodeå­¦ä¹ C/C++
+ÓÃÓÚVSCodeÑ§Ï°C/C++
+
+    ±àÂë£ºGB2312
