@@ -53,5 +53,6 @@ void print_all(const T& S)
 int test_binary_vector();
 void sortedVector_and_unsortedVector();
 void vector_example();
+void doubling();
 
 #endif
