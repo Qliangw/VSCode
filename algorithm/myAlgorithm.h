@@ -5,8 +5,10 @@
 #include <vector>
 
 using namespace std;
+
 size_t itertive_Collatz(size_t n);
 size_t memoized_Collatz(vector<size_t>&V,size_t n);
 void test_memoized_Collatz();
+void common_running_times();
 
 #endif
