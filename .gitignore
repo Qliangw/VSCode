@@ -1,13 +1,5 @@
 build
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/c_cpp_properties.json
 main.cpp
 CMakeLists.txt
-vector/CMakeLists.txt
-array/CMakeLists.txt
-myString/CMakeLists.txt
-sort/CMakeLists.txt
-*.json
+
