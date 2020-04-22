@@ -11,20 +11,20 @@ void alg_sort()
     const int n = 5;
     int arr[n] = {2,5,3,1,4};
 
-    // ä»å°åˆ°å¤§æ’åº.
+    // ´ÓĞ¡µ½´óÅÅĞò.
     sort(arr, arr + n);
     for(int i = 0; i < n; ++i)
         cout << arr[i] <<" ";
     cout << endl << endl;
 
-    // ä½¿ç”¨å‡½æ•°å¯¹è±¡greater<int>()è¿›è¡Œä»å¤§åˆ°å°æ’åº.
-    // æœ‰çš„ç¼–è¯‘å™¨å¯èƒ½éœ€è¦functionalå¤´æ–‡ä»¶.
+    // Ê¹ÓÃº¯Êı¶ÔÏógreater<int>()½øĞĞ´Ó´óµ½Ğ¡ÅÅĞò.
+    // ÓĞµÄ±àÒëÆ÷¿ÉÄÜĞèÒªfunctionalÍ·ÎÄ¼ş.
     sort(arr, arr + n, greater<int>());
         for(int i = 0; i < n; ++i)
         cout << arr[i] <<" ";
     cout << endl;
 
-    // å¯¹å­—ç¬¦ä¸²æ’åº.
+    // ¶Ô×Ö·û´®ÅÅĞò.
     string B[n] = {"www", "algorithm", "racer", "text", "wait"};
     sort(B, B + n);
     for (int i = 0; i < n; ++i)
@@ -35,18 +35,18 @@ void alg_sort()
     for (int i = 0; i < n; ++i)
         cout << B[i] << endl;
 
-    // å¯¹å‘é‡æ’åº.
+    // ¶ÔÏòÁ¿ÅÅĞò.
     vector<string> V = {"www", "algorithm", "racer", "text", "wait"};
-    // ä»å°åˆ°å¤§æ’åº.
+    // ´ÓĞ¡µ½´óÅÅĞò.
     sort(V.begin(), V.end());
-    // ä½¿ç”¨å‡½æ•°å¯¹è±¡greater<int>()è¿›è¡Œä»å¤§åˆ°å°æ’åº.
+    // Ê¹ÓÃº¯Êı¶ÔÏógreater<int>()½øĞĞ´Ó´óµ½Ğ¡ÅÅĞò.
     sort(V.begin(), V.end(), greater<string>());
-    // ä½¿ç”¨è¿­ä»£å™¨æ‰“å°Vä¸­æ‰€æœ‰å…ƒç´ .
+    // Ê¹ÓÃµü´úÆ÷´òÓ¡VÖĞËùÓĞÔªËØ.
     for (auto iter = V.begin(); iter != V.end(); ++iter)
         cout << *iter << endl;
-    // ä½¿ç”¨é€†å‘è¿­ä»£å™¨è¿›è¡Œä»å¤§åˆ°å°æ’åº.
+    // Ê¹ÓÃÄæÏòµü´úÆ÷½øĞĞ´Ó´óµ½Ğ¡ÅÅĞò.
     sort(V.rbegin(), V.rend());
-    // ä½¿ç”¨åŸºäºèŒƒå›´çš„forå¾ªç¯æ‰“å°Vä¸­æ‰€æœ‰å…ƒç´ .
+    // Ê¹ÓÃ»ùÓÚ·¶Î§µÄforÑ­»·´òÓ¡VÖĞËùÓĞÔªËØ.
     for (const string& x : V)
         cout << x << endl;
 

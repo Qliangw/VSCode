@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//å¯»æ‰¾ç¬¬kä¸ªå…ƒç´ 
+//Ñ°ÕÒµÚk¸öÔªËØ
 void order_statistics_set()
 {
     set<int> S = {3, 2, 1, 4, 5};
@@ -11,7 +11,7 @@ void order_statistics_set()
     int k;
     cout << "input k:";
     cin >> k;
-    // ç¬¬ä¸€ç§æ–¹æ³•: ä¼˜å…ˆé€‰æ‹©
+    // µÚÒ»ÖÖ·½·¨: ÓÅÏÈÑ¡Ôñ
     if(k <= 0 || k > S.size())
         cout << "err" << endl;
     else
@@ -24,18 +24,18 @@ void order_statistics_set()
     }
     
 
-    //ç¬¬äºŒç§æ–¹æ³• è¾ƒæ…¢
+    //µÚ¶şÖÖ·½·¨ ½ÏÂı
     vector<int> V;
-    //é¢„ç•™k-1ä¸ªå…ƒç´ ç©ºé—´
+    //Ô¤Áôk-1¸öÔªËØ¿Õ¼ä
     V.reserve(k-1);
-    //åˆ é™¤Sä¸­çš„å‰k-1ä¸ªå…ƒç´ å¹¶æš‚å­˜åˆ°Vä¸­
+    //É¾³ıSÖĞµÄÇ°k-1¸öÔªËØ²¢Ôİ´æµ½VÖĞ
     for(int i = 0; i < k-1; ++i)
     {
         V.push_back(*S.begin());
         S.erase(S.begin());
     }
     cout << *S.begin() << endl;
-    //å°†å‰k-1ä¸ªå…ƒç´ æ”¾å›Sä¸­ï¼Œä¹Ÿå¯ä»¥å¯¹Vä½¿ç”¨åŸºäºèŒƒå›´çš„forå¾ªç¯
+    //½«Ç°k-1¸öÔªËØ·Å»ØSÖĞ£¬Ò²¿ÉÒÔ¶ÔVÊ¹ÓÃ»ùÓÚ·¶Î§µÄforÑ­»·
     S.insert(V.begin(), V.end());
     for(size_t i = 0; i < V.size(); ++i)
         S.insert(V[i]);

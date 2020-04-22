@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.17)
  
 project(Demo)
-# ä»£ç è·¯å¾„
+# ´úÂëÂ·¾¶
 aux_source_directory(. DIR_TOOT_SRCS)
-# æ·»åŠ å­ç›®å½•
+# Ìí¼Ó×ÓÄ¿Â¼
 add_subdirectory(myString)
 add_subdirectory(array)
 add_subdirectory(sort)
@@ -12,7 +12,7 @@ add_subdirectory(algorithm)
 add_subdirectory(set)
 
 
-# debug æ¨¡å¼
+# debug Ä£Ê½
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
 
 #include_directories( 
@@ -23,9 +23,9 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
 #    ${PROJECT_SOURCE_DIR}/algorithm
 #)
 
-# ç”Ÿæˆå¯æ‰§è¡Œçš„æ–‡ä»¶
+# Éú³É¿ÉÖ´ĞĞµÄÎÄ¼ş
 add_executable(Demo ${DIR_TOOT_SRCS})
-# æ·»åŠ é“¾æ¥åº“
+# Ìí¼ÓÁ´½Ó¿â
 target_link_libraries(
     Demo myString
     array
@@ -35,6 +35,6 @@ target_link_libraries(
     mySet
 )
 
-# éœ€è¦é“¾æ¥é¢å¤–çš„åŠ¨æ€åº“æ—¶ï¼š
+# ĞèÒªÁ´½Ó¶îÍâµÄ¶¯Ì¬¿âÊ±£º
 # target_link_libraries(${PROJECT_NAME}
 # /usr/lib/i386-linux-gnu/libboost_system.so

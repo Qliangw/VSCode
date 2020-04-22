@@ -5,28 +5,28 @@ using namespace std;
 void sortedVector_and_unsortedVector()
 {
     int key;
-    //æœ‰åºå‘é‡
+    //ÓĞĞòÏòÁ¿
     vector<int> SV= {1,3,6,6,8,9};
     cout << "SV:";
     print_all(SV);
-    //æŸ¥æ‰¾å…ƒç´ 
+    //²éÕÒÔªËØ
     cout << "please input key:";
     cin >> key;
     auto iter = lower_bound(SV.begin(),SV.end(),key);
     cout << "iter - SV.begin = "<< iter - SV.begin() << endl;
     iter = upper_bound(SV.begin(),SV.end(),key);
     cout << "iter - SV.begin = "<< iter - SV.begin() << endl;
-    //æ’å…¥æ–°å…ƒç´ 
+    //²åÈëĞÂÔªËØ
     key = 0;
     auto iter_SV = lower_bound(SV.begin(),SV.end(),key);
     SV.insert(iter_SV,key);
     cout << "NEW SV:";
     print_all(SV);
     
-    //åˆ é™¤
+    //É¾³ı
     cout << "Delete key in the SV:";
     cin >> key;
-    //å¦‚æœå­˜åœ¨åˆ™åˆ é™¤
+    //Èç¹û´æÔÚÔòÉ¾³ı
     if(binary_search(SV.begin(),SV.end(),key))
     {
         iter_SV = upper_bound(SV.begin(),SV.end(),key);
@@ -38,19 +38,19 @@ void sortedVector_and_unsortedVector()
     {
         cout << "key does't exist " << endl;
     }
-    //æŸ¥æ‰¾é‡å¤keyæ‰€åœ¨çš„åŒºé—´range,åŒºé—´ä¸º[range.first range.second]
+    //²éÕÒÖØ¸´keyËùÔÚµÄÇø¼ärange,Çø¼äÎª[range.first range.second]
     auto range = equal_range(SV.begin(),SV.end(),key);
-    //åˆ é™¤æ•´ä¸ªrangeåŒºé—´çš„å…ƒç´ 
+    //É¾³ıÕû¸örangeÇø¼äµÄÔªËØ   
     SV.erase(range.first, range.second);
-    //æ‰“å°
+    //´òÓ¡
     print_all(SV);
     cout << endl ;
 
-    //æ— åºå‘é‡
+    //ÎŞĞòÏòÁ¿
     vector<int> USV = {9,6,1,3,8,6};
     cout << "USV:";
     print_all(USV);
-    //æ’å…¥æ–°å…ƒç´ 
+    //²åÈëĞÂÔªËØ
     key = 0;
     USV.push_back(key);
     print_all(USV);

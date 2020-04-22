@@ -9,7 +9,7 @@ int diagonal()
   int y = 0;
   int M[n][n];
 
-  // 鏂规硶1:
+  // 方法1:
   for (int i = 0; i < n; ++i)
     for (int j = 0; j < n; ++j)
       if (i == j)
@@ -17,14 +17,14 @@ int diagonal()
       else
         M[i][j] = y;
 
-  // // 鏂规硶2:
+  // // 方法2:
   // for (int i = 0; i < n; ++i)
   //   for (int j = 0; j < n; ++j)
   //     M[i][j] = y;
   // for (int i = 0; i < n; ++i)
   //   M[i][i] = x;
 
-  // 鏂规硶3:
+  // 方法3:
   // for (int i = 0; i < n; ++i)
   // {
   //   for (int j = 0; j < i; ++j)
@@ -34,7 +34,7 @@ int diagonal()
   //     M[i][j] = y;
   // }
 
-  // 鍦ㄥ睆骞曚笂杈撳嚭.
+  // 在屏幕上输出.
   for (int i = 0; i < n; ++i)
   {
     for (int j = 0; j < n; ++j)

@@ -11,40 +11,40 @@ int arrayAndVector()
     const int n = 42;
     const int c = 1;
 
-    //å®šä¹‰
+    //¶¨Òå
     int A1[n];
     vector<int> V1(n);
 
-    //åˆå§‹åŒ–
+    //³õÊ¼»¯
     for(size_t i = 0; i < n; ++i)
         A1[i] = c;
     vector<int> V2(n,c);
 
-    //åˆ—è¡¨åˆå§‹åŒ–
+    //ÁĞ±í³õÊ¼»¯
     vector<int> V3 = {1, 2, 3, 4, 5};
-    cout << "åˆ—è¡¨åˆå§‹åŒ–ï¼š" ;
+    cout << "ÁĞ±í³õÊ¼»¯£º" ;
     for(size_t i = 0; i < V3.size(); ++i)
         cout << V3[i] << " ";
     cout << endl;
     cout << endl;
 
-    //åŠ¨æ€å˜åŒ–
-    cout << "åŠ¨æ€å˜åŒ–ï¼š"  << endl;
+    //¶¯Ì¬±ä»¯
+    cout << "¶¯Ì¬±ä»¯£º"  << endl;
     V3.push_back(6);
-    cout  << "V3çš„å¤§å°ï¼š" ;
+    cout  << "V3µÄ´óĞ¡£º" ;
     cout << V3.size() << endl;
-    cout  << "V3é¦–æœ«æ•°ï¼š";
+    cout  << "V3Ê×Ä©Êı£º";
     cout << V3.front() << " " << V3.back() << endl;
 
-    cout  << "V3çš„å¤§å°ï¼š";
+    cout  << "V3µÄ´óĞ¡£º";
     V3.pop_back();
     cout << V3.size() << endl;
-    cout  << "V3é¦–æœ«æ•°ï¼š" ;
+    cout  << "V3Ê×Ä©Êı£º" ;
     cout << V3.front() << " " << V3.back() << endl;
     cout << endl;
 
-    //è¿­ä»£å™¨
-    cout << "è¿­ä»£å™¨ï¼š" ;
+    //µü´úÆ÷
+    cout << "µü´úÆ÷£º" ;
     for(auto iter = V3.begin(); iter != V3.end(); ++iter)
         cout << *iter << " ";
     cout << endl;

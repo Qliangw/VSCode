@@ -6,11 +6,11 @@ void set_example()
 {
     set<int> S = {3, 2, 1, 4, 5 };
     
-    //æ’å…¥
+    //²åÈë
     S.insert(0);
     S.insert(7);
 
-    //æŸ¥æ‰¾ä¸åˆ é™¤
+    //²éÕÒÓëÉ¾³ı
     auto iter = S.find(0);
     if(iter != S.end())
         S.erase(iter);
@@ -19,15 +19,15 @@ void set_example()
         S.erase(iter);
     S.erase(5);
 
-    //è¿­ä»£å™¨ä½ç½®
+    //µü´úÆ÷Î»ÖÃ
     iter = S.begin();
     cout << *iter << endl;
-     ++iter;//å¯¹äºè¿­ä»£å™¨æ¥è¯´ ++æ”¾åœ¨åé¢æ•ˆç‡ä¼šä½ä¸€äº›
+     ++iter;//¶ÔÓÚµü´úÆ÷À´Ëµ ++·ÅÔÚºóÃæĞ§ÂÊ»áµÍÒ»Ğ©
      cout << *iter << endl;
      --iter;
      cout << *iter << endl;
 
-    //éå†é›†åˆ
+    //±éÀú¼¯ºÏ
     for(auto iter = S.cbegin(); iter != S.end(); ++iter)
         cout << *iter << " ";   
     cout << endl;
@@ -36,7 +36,7 @@ void set_example()
         cout << *iter << " ";
     cout << endl;
 
-    for(const auto& x: S) //åªèƒ½æŸ¥çœ‹
+    for(const auto& x: S) //Ö»ÄÜ²é¿´
         cout << x << " ";
     cout << endl;
 

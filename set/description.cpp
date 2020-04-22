@@ -6,7 +6,7 @@ using namespace std;
 
 void descriptiong()
 {
-    //差集
+    //�
     set<int> A = {3,2,1,4,7,9,11};
     set<int> B = {6,2,9};
     cout << "A:";
@@ -25,7 +25,7 @@ void descriptiong()
     cout << "C:";
     print_all(C);
 
-    //转存
+    //ת��
     set<string> D = {"Englsih","Ability","Alogroithm","Faith","Data"};
     cout << "D:";
     print_all(D);
@@ -39,7 +39,7 @@ void descriptiong()
     cout << "E:";
     print_all(E);
 
-    //动态变化
+    //��̬�仯
     set<int> F = {3,5,1,7,2,8,0};
     cout << "F:";
     print_all(F);

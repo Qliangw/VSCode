@@ -5,14 +5,14 @@
 #include <Windows.h>
  
 /**
-* cstdioæ˜¯å°†stdio.hçš„å†…å®¹ç”¨C++å¤´æ–‡ä»¶çš„å½¢å¼è¡¨ç¤ºå‡ºæ¥ã€‚
-*stdio.hæ˜¯Cæ ‡å‡†å‡½æ•°åº“ä¸­çš„å¤´æ–‡ä»¶ï¼Œå³ï¼šstandard buffered input&outputã€‚
-*æä¾›åŸºæœ¬çš„æ–‡å­—çš„è¾“å…¥è¾“å‡ºæµæ“ä½œï¼ˆåŒ…æ‹¬å±å¹•å’Œæ–‡ä»¶ç­‰ï¼‰ã€‚                                                                   
+* cstdioÊÇ½«stdio.hµÄÄÚÈÝÓÃC++Í·ÎÄ¼þµÄÐÎÊ½±íÊ¾³öÀ´¡£
+*stdio.hÊÇC±ê×¼º¯Êý¿âÖÐµÄÍ·ÎÄ¼þ£¬¼´£ºstandard buffered input&output¡£
+*Ìá¹©»ù±¾µÄÎÄ×ÖµÄÊäÈëÊä³öÁ÷²Ù×÷£¨°üÀ¨ÆÁÄ»ºÍÎÄ¼þµÈ£©¡£                                                                   
 */
  
 /**
-*conioæ˜¯Console Input/Outputï¼ˆæŽ§åˆ¶å°è¾“å…¥è¾“å‡ºï¼‰çš„ç®€å†™ï¼Œå…¶ä¸­å®šä¹‰äº†é€šè¿‡æŽ§åˆ¶å°è¿›è¡Œæ•°æ®è¾“å…¥å’Œæ•°æ®è¾“å‡ºçš„å‡½æ•°ï¼Œ
-*ä¸»è¦æ˜¯ä¸€äº›ç”¨æˆ·é€šè¿‡æŒ‰é”®ç›˜äº§ç”Ÿçš„å¯¹åº”æ“ä½œï¼Œæ¯”å¦‚getch()()å‡½æ•°ç­‰ç­‰ã€‚                                                       
+*conioÊÇConsole Input/Output£¨¿ØÖÆÌ¨ÊäÈëÊä³ö£©µÄ¼òÐ´£¬ÆäÖÐ¶¨ÒåÁËÍ¨¹ý¿ØÖÆÌ¨½øÐÐÊý¾ÝÊäÈëºÍÊý¾ÝÊä³öµÄº¯Êý£¬
+*Ö÷ÒªÊÇÒ»Ð©ÓÃ»§Í¨¹ý°´¼üÅÌ²úÉúµÄ¶ÔÓ¦²Ù×÷£¬±ÈÈçgetch()()º¯ÊýµÈµÈ¡£                                                       
 */
  
 using namespace std;
@@ -22,7 +22,7 @@ struct node
 	int data;
 	node *next;
 };
-// åˆ›å»ºå•é“¾è¡¨
+// ´´½¨µ¥Á´±í
 node *creat()
 {
 	node *head, *p;
@@ -58,7 +58,7 @@ node *creat()
 	return head;
 }
  
-// å•é“¾è¡¨æµ‹é•¿
+// µ¥Á´±í²â³¤
 int length(node *head)
 {
 	int n   = 0;
@@ -73,7 +73,7 @@ int length(node *head)
 	return n;
 }
  
-// å•é“¾è¡¨æ‰“å°
+// µ¥Á´±í´òÓ¡
 void printL(node *head)
 {
 	node *p = head;
@@ -85,44 +85,44 @@ void printL(node *head)
 	}
 }
  
-// å•é“¾è¡¨æ’å…¥
+// µ¥Á´±í²åÈë
 node *insert(node *head, int num)
 {
 	node *p0, *p1, *p2;
 	p1 = head;
  
 	p2 = new node;
-	p0 = new node; // æ’å…¥èŠ‚ç‚¹
-	p0->data = num;// æ’å…¥æ•°æ®
+	p0 = new node; // ²åÈë½Úµã
+	p0->data = num;// ²åÈëÊý¾Ý
  
 	while (p0->data > p1->data && p1->next != NULL)
 	{
 		p2 = p1;
-		p1 = p1->next;// p0,p1å’Œp2ä½ç½®: p2->p1->p0
+		p1 = p1->next;// p0,p1ºÍp2Î»ÖÃ: p2->p1->p0
 	}
  
 	if (p0->data <= p1->data)
 	{
 		if (p1 == head)
-		{// å¤´éƒ¨å‰æ®µæ’å…¥ p0å’Œp1ä½ç½®: p0->p1->...
+		{// Í·²¿Ç°¶Î²åÈë p0ºÍp1Î»ÖÃ: p0->p1->...
 			head = p0;
 			p0->next = p1;		
 		} 
 		else
-		{// æ’å…¥ä¸­é—´èŠ‚ç‚¹ p0,p1å’Œp2ä½ç½®: p2-> p0 -> p1
+		{// ²åÈëÖÐ¼ä½Úµã p0,p1ºÍp2Î»ÖÃ: p2-> p0 -> p1
 			p2->next = p0;
 			p0->next = p1;
 		}
 	} 
 	else
-	{   // å°¾éƒ¨æ’å…¥èŠ‚ç‚¹ p0,p1å’Œp2ä½ç½®: p2->p1->p0->NULL
+	{   // Î²²¿²åÈë½Úµã p0,p1ºÍp2Î»ÖÃ: p2->p1->p0->NULL
 		p1->next = p0;
 		p0->next = NULL;
 	}
 	return head;
 }
  
-// å•é“¾è¡¨åˆ é™¤
+// µ¥Á´±íÉ¾³ý
 node *del(node *head, int num)
 {
 	node *p1, *p2;
@@ -132,12 +132,12 @@ node *del(node *head, int num)
 	while (num != p1->data && p1->next != NULL)
 	{
 		p2 = p1;
-		p1 = p1->next;// p1å’Œp2ä½ç½®: p2->p1		
+		p1 = p1->next;// p1ºÍp2Î»ÖÃ: p2->p1		
 	}
  
 	if (num == p1->data)
 	{
-		if (p1 == head)// åˆ é™¤å¤´èŠ‚ç‚¹
+		if (p1 == head)// É¾³ýÍ·½Úµã
 		{
 			head = p1->next;
 			delete p1;
@@ -159,20 +159,20 @@ node *del(node *head, int num)
 int main()
 {
     SetConsoleOutputCP(65001);
-	cout << "***åˆ›å»ºå•é“¾è¡¨***" << endl;
+	cout << "***´´½¨µ¥Á´±í***" << endl;
 	node *head = creat();
 	cout << endl;
  
-	cout << "***è®¡ç®—é“¾è¡¨é•¿***" << endl;
+	cout << "***¼ÆËãÁ´±í³¤***" << endl;
 	int n = length(head);
 	cout << "The length of input single linker is " << n << "." << endl;
 	cout << endl;
  
-	cout << "***æ‰“å°å•é“¾è¡¨***" << endl;
+	cout << "***´òÓ¡µ¥Á´±í***" << endl;
 	printL(head);
 	cout << endl;
  
-	cout << "****æ’å…¥èŠ‚ç‚¹****" << endl;
+	cout << "****²åÈë½Úµã****" << endl;
 	cout << "Please input the data for inserting operate : ";
 	int inData;
 	cin >> inData;
@@ -180,7 +180,7 @@ int main()
 	printL(head);
 	cout << endl;
  
-	cout << "****åˆ é™¤èŠ‚ç‚¹****" << endl;
+	cout << "****É¾³ý½Úµã****" << endl;
 	cout << "Please input the data for deleting operate : ";
 	int outData;
 	cin >> outData;
