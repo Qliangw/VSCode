@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <string>
 #include <conio.h>
-#include <Windows.h>
  
 /**
 * cstdio是将stdio.h的内容用C++头文件的形式表示出来。
@@ -158,7 +157,7 @@ node *del(node *head, int num)
  
 int main()
 {
-    SetConsoleOutputCP(65001);
+    
 	cout << "***创建单链表***" << endl;
 	node *head = creat();
 	cout << endl;
