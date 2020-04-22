@@ -43,5 +43,6 @@ bool binary_search_iterator(const T& key, iterator L, iterator R)
 }
 
 int test_binary_vector();
+void sortedVector_and_unsortedVector();
 
 #endif
