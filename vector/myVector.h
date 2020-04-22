@@ -42,6 +42,14 @@ bool binary_search_iterator(const T& key, iterator L, iterator R)
   return false;
 }
 
+template <typename T>
+void print_all(const T& S)
+{
+  for (const auto& x : S)
+    cout << x << ' ';
+  cout << endl;
+}
+
 int test_binary_vector();
 void sortedVector_and_unsortedVector();
 
