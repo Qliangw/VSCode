@@ -5,7 +5,7 @@
 #include <vector>
 
 using namespace std;
-// 涓轰簡绠�渚胯捣瑙?, 娌℃湁浣跨敤vector<T>::const_iterator.
+// 为了简便起见, 没有使用vector<T>::const_iterator.
 template <typename T>
 bool binary_search_vector(const T& key, typename vector<T>::iterator data,
                           size_t N)
@@ -15,9 +15,9 @@ bool binary_search_vector(const T& key, typename vector<T>::iterator data,
   while (low < high)
   {
     size_t mid = low + (high - low) / 2;
-    if (key < *(data + mid))		// 灏忓垯鍘诲墠鍗婇儴鍒嗙户缁?煡鎵?.
+    if (key < *(data + mid))		// 小则去前半部分
       high = mid;
-    else if (*(data + mid) < key)	// 澶у垯鍘诲悗鍗婇儴鍒嗙户缁?煡鎵?.
+    else if (*(data + mid) < key)	// 大则去前半部分
       low = mid + 1;
     else
       return true;
