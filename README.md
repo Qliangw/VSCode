@@ -1,4 +1,4 @@
 # VSCode
-����VSCodeѧϰC/C++
+用于VSCode学习C/C++
 
-    ���룺GB2312
+    编码：GB2312
