@@ -1,6 +1,5 @@
 #include "mySet.h"
-#include <iostream>
-#include <set>
+
 using namespace std;
 
 void set_example()
