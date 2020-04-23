@@ -5,5 +5,6 @@
 #include <vector>
 
 void slist();
+void reverse_ex();
 
 #endif //  _MYFORWARDLIST_H
