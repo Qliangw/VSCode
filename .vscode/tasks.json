@@ -1,0 +1,15 @@
+{
+    "tasks": [
+     {
+      "type": "shell",
+      "label": "cmake build active file", // 任务名称
+      "command": "cmake --build ${workspaceFolder}\\build --config Debug --target all -- -j 10", // cmake指令
+      "args": [
+      ], // 指令参数
+      "options": {
+       "cwd": "C:/Tools/mingw64/bin"
+      }
+     }
+    ],
+    "version": "2.0.0"
+   }

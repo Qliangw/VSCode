@@ -1,5 +1,3 @@
 build
-.vscode
 main.cpp
-CMakeLists.txt
 
