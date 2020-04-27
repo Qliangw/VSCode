@@ -55,4 +55,10 @@ void sortedVector_and_unsortedVector();
 void vector_example();
 void doubling();
 
+void int_push_back();
+
+void pointer_push_back();
+
+void struct_push_back();
+
 #endif
