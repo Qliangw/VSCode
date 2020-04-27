@@ -11,7 +11,7 @@ add_subdirectory(vector)
 add_subdirectory(algorithm)
 add_subdirectory(set)
 add_subdirectory(list)
-
+add_subdirectory(stack)
 # debug 模式
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
 
@@ -34,6 +34,7 @@ target_link_libraries(
     myAlgorithm
     mySet
     myList
+    stack
 )
 
 # 需要链接额外的动态库时：
