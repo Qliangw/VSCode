@@ -10,6 +10,8 @@ void brackets_validator();
 
 void generalized_validator_test();
 
+void maze_with_stack();
+
 #endif // !_MYSTACK_H
 
 
