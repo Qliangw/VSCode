@@ -6,6 +6,7 @@
 
 void number_convertor();
 
+void brackets_validator();
 
 #endif // !_MYSTACK_H
 
