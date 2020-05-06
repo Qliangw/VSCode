@@ -9,6 +9,7 @@ using namespace std;
 
 void buffer();
 void phone();
+int maze_with_queue();
 
 
 
