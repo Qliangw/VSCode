@@ -19,5 +19,6 @@ void set_example();
 void order_statistics_set();
 void descriptiong();
 int binary_tree();
+int rebuild();
 
 #endif
