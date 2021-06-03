@@ -62,5 +62,6 @@ int rebuild()
     else
       cout << "Error!" << endl;
   }
+  cout << endl;
   return 0;
 }
